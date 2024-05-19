@@ -6,6 +6,8 @@ vim.opt.softtabstop = 4
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.opt.clipboard="unnamed"
+vim.opt.wrap = false
+
+vim.opt.clipboard = "unnamed"
 
 vim.g.mapleader = " "

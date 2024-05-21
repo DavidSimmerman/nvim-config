@@ -14,3 +14,5 @@ vim.g.mapleader = " "
 
 vim.opt.undodir = vim.fn.expand("~/.config/nvim/.undo")
 vim.opt.undofile = true
+
+vim.keymap.set("n", "<esc>", "<cmd>lua vim.api.nvim_exec('nohlsearch', true)<CR>", {})

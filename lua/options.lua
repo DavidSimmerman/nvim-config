@@ -11,3 +11,6 @@ vim.opt.wrap = false
 vim.opt.clipboard = "unnamed"
 
 vim.g.mapleader = " "
+
+vim.opt.undodir = vim.fn.expand("~/.config/nvim/.undo")
+vim.opt.undofile = true

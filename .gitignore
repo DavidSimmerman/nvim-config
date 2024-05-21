@@ -6,4 +6,4 @@ debug
 foo.*
 *.log
 data
-.undo/%Users%david%.config%nvim%lua%options.lua
+.undo

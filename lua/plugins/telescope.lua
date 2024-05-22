@@ -36,10 +36,18 @@ return {
 			)
 			vim.keymap.set("n", "<leader>/", builtin.live_grep, {})
 			vim.keymap.set("n", "<leader>fr", builtin.oldfiles, {})
-			vim.keymap.set("n", "<leader><leader>", builtin.find_files, {})
+			vim.keymap.set("n", "<leader><leader>", function()
+				require("telescope").extensions.frecency.frecency({ workspace = "CWD" })
+			end, {})
 
 			require("telescope").load_extension("ui-select")
 			require("telescope").load_extension("fzf")
+		end,
+	},
+	{
+		"nvim-telescope/telescope-frecency.nvim",
+		config = function()
+			require("telescope").load_extension("frecency")
 		end,
 	},
 }

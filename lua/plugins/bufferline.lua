@@ -7,6 +7,7 @@ return {
 			},
 		})
 
+		vim.keymap.set("n", "<leader>bd", "<Cmd>bd<CR>", { desc = "Delete Current Buffer" })
 		vim.keymap.set("n", "<leader>bp", "<Cmd>BufferLineTogglePin<CR>", { desc = "Toggle Pin" })
 		vim.keymap.set(
 			"n",

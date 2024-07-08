@@ -20,6 +20,7 @@ return {
 				["markdown.mdx"] = { "prettier" },
 				["graphql"] = { "prettier" },
 				["handlebars"] = { "prettier" },
+				["python"] = { "black" },
 			},
 			-- format_on_save = {
 			-- 	-- These options will be passed to conform.format()
